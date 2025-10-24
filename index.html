@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click-Only Accordion Menu</title>
+    <title>Site Navigation Test</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="centers-nav"> 
     <ul class="centers-parent"> 
-      <li class="parent-only"><a href="#"> Center 1 </li>
-      <li class="parent-only"><a href="#"> Center 2 </li>
-      <li class="parent-only"><a href="#"> Center 3 </li>
+      <li class="parent-only"><a href="#"> Center 1 </a></li>
+      <li class="parent-only"><a href="#"> Center 2 </a></li>
+      <li class="parent-only"><a href="#"> Center 3 </a></li>
     </ul>
   </nav>
   <nav class="horizontal-nav">
     <ul class="parent-menu">
         <li class="parent-item">
-            <a href="#" class="parent-link">Forecast</a>
+            <button href="#" class="parent-link" aria-expanded="false" >Forecast</button>
             <ul class="child-menu">
                 <li><a href="#" data-value="p1-c1">Find your forecast</a></li>
                 <li><a href="#" data-value="p1-c2">Specialty Forecasts</a></li>
@@ -25,7 +25,7 @@
             </ul>
         </li>
         <li class="parent-item">
-            <a href="#" class="parent-link">Locations</a>
+            <button href="#" class="parent-link" aria-expanded="false">Locations</button>
             <ul class="child-menu">
                 <li><a href="#" data-value="p2-c1">County</a></li>
                 <li><a href="#" data-value="p2-c2">State</a></li>
@@ -33,14 +33,14 @@
             </ul>
         </li>
         <li class="parent-item">
-            <a href="#" class="parent-link">Safety</a>
+            <button href="#" class="parent-link" aria-expanded="false">Safety</button>
             <ul class="child-menu">
                 <li><a href="#" data-value="p3-c1">Safety Guides</a></li>
                 <li><a href="#" data-value="p3-c2">State Weather Guides</a></li>
             </ul>
         </li>
         <li class="parent-item">
-            <a href="#" class="parent-link">Tools</a>
+            <button href="#" class="parent-link" aria-expanded="false">Tools</button>
             <ul class="child-menu">
                 <li><a href="#" data-value="p4-c1">Radar</a></li>
                 <li><a href="#" data-value="p4-c2">Event recaps</a></li>
@@ -52,7 +52,7 @@
             <a href="#" class="parent-link">Programs</a>
         </li>
         <li class="parent-item">
-            <a href="#" class="parent-link">About</a>
+            <button href="#" class="parent-link" aria-expanded="false">About</button>
             <ul class="child-menu">
                 <li><a href="#" data-value="p5-c1">Mission</a></li>
                 <li><a href="#" data-value="p5-c2">Offices</a></li>

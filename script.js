@@ -34,10 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
             const childMenu = link.nextElementSibling;
+            if (link.tagName === "BUTTON") {
+              link.setAttribute('aria-expanded', true);
+            }
             
             // If another menu is open, close it first and clear its checks
             if (openMenu && openMenu !== childMenu) {
                 openMenu.classList.remove('show');
+                openMenu.previousElementSibling.setAttribute('aria-expanded', false);
                 openMenu.querySelectorAll('li a.selected').forEach(item => {
                     item.classList.remove('selected');
                 });
