@@ -31,6 +31,10 @@ a:visited {
   font-size: 14px;
 }
 
+.centers-parent a {
+  color: rgba(2, 2, 2, .98);
+}
+
 .centers-parent li:hover {
   background-color: #d9d9d9;
 }
